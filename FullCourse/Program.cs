@@ -10,38 +10,15 @@ namespace FullCourse
     {
         static void Main(string[] args)
         {
-            // Numeric types
+            // Text based types
+            // string
+            string name = "Bob";
 
-            // Integers
-            int age = 20;
-            Console.WriteLine(age);
-            Console.WriteLine(int.MinValue);
-            Console.WriteLine(int.MaxValue);
+            // character
+            char letter = 'A';
 
-            // Long integer
-            long b = 90000000L;
-            Console.WriteLine(b);
-            Console.WriteLine(long.MinValue);
-            Console.WriteLine(long.MaxValue);
-
-            // Decimals
-            // double
-            double c = 55.20;
-            Console.WriteLine(c);
-            Console.WriteLine(double.MinValue);
-            Console.WriteLine(double.MaxValue);
-
-            // float
-            float f = 5.000001F;
-            Console.WriteLine(f);
-            Console.WriteLine(float.MinValue);
-            Console.WriteLine(float.MaxValue);
-
-            // decimal -> money
-            decimal money = 14.99M;
-            Console.WriteLine(money);
-            Console.WriteLine(decimal.MinValue);
-            Console.WriteLine(decimal.MaxValue);
+            Console.WriteLine(name);
+            Console.WriteLine(letter);
 
             Console.ReadLine();
 
