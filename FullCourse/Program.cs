@@ -12,22 +12,12 @@ namespace FullCourse
     {
         static void Main(string[] args)
         {
-            // Convert string to number
-            string textAge = "23";
-            int age = Convert.ToInt32(textAge);
-            Console.WriteLine(age);
+            // Boolean data type
+            bool hasFriend = true;
+            bool hasCar = false;
 
-            string textBigNumber = "900000000000";
-            long bigNumber = Convert.ToInt64(textBigNumber);
-            Console.WriteLine(bigNumber);
-
-            string textFloat = "5.15";
-            float floatNumber = Convert.ToSingle(textFloat, CultureInfo.InvariantCulture);
-            Console.WriteLine(floatNumber);
-
-            string textMoney = "6.99";
-            decimal money = Convert.ToDecimal(textMoney, CultureInfo.InvariantCulture);
-            Console.WriteLine(money);
+            Console.WriteLine(hasFriend);
+            Console.WriteLine(hasCar);
 
             Console.ReadLine();
 
