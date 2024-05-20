@@ -12,36 +12,14 @@ namespace FullCourse
     {
         static void Main(string[] args)
         {
-            // Operators
-            int age = 23;
-            age++;
+            // constants
+            const vat = 20;
+            Console.WriteLine(vat);
+
+            // with var it's needed to initialize variable with value
+            var age = 15;
             Console.WriteLine(age);
 
-            age--;
-            Console.WriteLine(age);
-
-            age += 10;
-            Console.WriteLine(age);
-
-            age -= 5;
-            Console.WriteLine(age);
-
-            age *= 2;
-            Console.WriteLine(age);
-
-            
-            double newAge = 35;
-            newAge /= 3;
-            Console.WriteLine(newAge);
-
-            string text1 = "Hello";
-            string text2 = "world";
-            Console.WriteLine(text1 + text2);
-
-            // Remainder operator
-            int num1 = 10;
-            int num2 = 3;
-            Console.WriteLine(num1 % num2);
 
             Console.ReadLine();
 
