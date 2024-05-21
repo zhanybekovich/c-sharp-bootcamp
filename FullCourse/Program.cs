@@ -12,16 +12,60 @@ namespace FullCourse
     {
         static void Main(string[] args)
         {
-            // for loop
-            for (int i = 0; i < 5; i++)
-            {
-                Console.WriteLine($"Hi {i}");
-            }
-
-            for (int i = 0; i <= 10; i += 2)
+            // while loop
+            /*int i = 0;
+            while(i < 5)
             {
                 Console.WriteLine(i);
+                i++;
             }
+
+            Console.Write("Enter number a: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter number b: ");
+            int b  = Convert.ToInt32(Console.ReadLine());
+
+            int answer = a * b;
+            int actualAnswer = 0;
+
+            Console.WriteLine($"What is the value of {a} * {b}?");
+
+            while (answer != actualAnswer)
+            {
+                Console.Write("Enter your answer: ");
+                actualAnswer = Convert.ToInt32(Console.ReadLine());
+
+                if (answer != actualAnswer)
+                    Console.WriteLine("Try it again!");
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("Well Done!");*/
+
+            // do while
+            Console.Write("Enter number a: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter number b: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            int answer = a * b;
+            int actualAnswer = 0;
+
+            Console.WriteLine($"What is the value of {a} * {b}?");
+
+            do
+            {
+                Console.Write("Enter your answer: ");
+                actualAnswer = Convert.ToInt32(Console.ReadLine());
+
+                if (answer != actualAnswer)
+                    Console.WriteLine("Try it again!");
+                Console.WriteLine();
+            } while (answer != actualAnswer);
+
+            Console.WriteLine("Well Done!");
 
             Console.ReadLine();
         }
