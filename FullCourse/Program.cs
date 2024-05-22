@@ -12,41 +12,26 @@ namespace FullCourse
     {
         static void Main(string[] args)
         {
-            // numeric formatting
-            /*double value = 1000D / 12.34D;*/
+            // TryParse
+            bool success = true;
 
-            /*Console.WriteLine(value);
-            Console.WriteLine(string.Format("{0:0}", value));
-            Console.WriteLine(string.Format("{0:0.0}", value));
-            Console.WriteLine(string.Format("{0:0.00}", value));
-            Console.WriteLine(value);*/
+            while (success)
+            {
+                Console.Write("Enter a number: ");
+                string numInput = Console.ReadLine();
 
-            double money = 10D / 3D;
-            Console.WriteLine(string.Format("{0:0.00}", money));
-            Console.WriteLine(money.ToString());
-
-            // currency
-            Console.WriteLine(money.ToString("C"));
+                // tries to convert 
+                if (int.TryParse(numInput, out int num))
+                {
+                    success = false;
+                    Console.WriteLine(num);
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input!");
+                }
+            }
             
-            // truncate
-            Console.WriteLine(money.ToString("C0"));
-            
-            // 1 decimal after .
-            Console.WriteLine(money.ToString("C1"));
-
-            // 2 decimal after .
-            Console.WriteLine(money.ToString("C2"));
-
-            Console.WriteLine("============");
-
-            // Providing Culture info
-            // Do not forget to add -> using System.Globalization;
-            Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("ru")));
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("ky-KG")));
-
             Console.ReadLine();
         }
     }
