@@ -12,23 +12,20 @@ namespace FullCourse
     {
         static void Main(string[] args)
         {
-            // TryParse
-            bool success = true;
-
-            while (success)
+            // FizzBuz challenge
+            for (int i = 1; i <= 15; i++)
             {
-                Console.Write("Enter a number: ");
-                string numInput = Console.ReadLine();
-
-                // tries to convert 
-                if (int.TryParse(numInput, out int num))
+                if (i % 3 == 0 && i % 5 == 0) {
+                    Console.WriteLine("FizzBuzz");
+                } else if (i % 3 == 0)
                 {
-                    success = false;
-                    Console.WriteLine(num);
-                }
-                else
+                    Console.WriteLine("Fizz");
+                } else if (i % 5 == 0)
                 {
-                    Console.WriteLine("Invalid input!");
+                    Console.WriteLine("Buzz");
+                } else
+                {
+                    Console.WriteLine(i);
                 }
             }
             
